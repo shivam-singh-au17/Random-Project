@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  background-image: url(http://www.timothyedmoore.com/wp-content/uploads/2017/02/back2.jpg);
+  /* background-image: url(https://www.timothyedmoore.com/wp-content/uploads/2017/02/leather-texture.jpg); */
+}
+.btn {
+  background-image: url(https://www.timothyedmoore.com/wp-content/uploads/2017/02/leather-texture.jpg);
+   /* background-image: url(http://www.timothyedmoore.com/wp-content/uploads/2017/02/back2.jpg); */
+  color: rgb(250, 250, 250);
+  padding: 15px 60px;
+  font-size: 1em;
+  margin: 20px auto;
+  max-width: 200px;
+  outline: none;
+  display: block;
+  border: 4px solid rgb(255, 255, 255);
+  cursor: pointer;
+  border-radius: 20px;
+  letter-spacing: 1px;
+}
+
+.btn2 {
+  /* background-image: url(https://www.timothyedmoore.com/wp-content/uploads/2017/02/leather-texture.jpg); */
+   background-image: url(http://www.timothyedmoore.com/wp-content/uploads/2017/02/back2.jpg);
+  color: rgb(250, 250, 250);
+  padding: 10px 50px;
+  font-size: 2.3em;
+  margin: 20px auto;
+  max-width: 250px;
+  outline: none;
+  display: block;
+  border: 1px solid rgb(110, 59, 1);
+  cursor: pointer;
+  border-radius: 20px;
+  letter-spacing: 1px;
+}
+
+.btn:hover {
+  letter-spacing: 2px;
+  color: #ebbb74;
+  font-size: 120px;
+  font-weight: 500;
+  border: 4px solid #ebbb74;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.box {
+  border-radius: 50%;
+  margin: 1%;
+  width: 18%;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background: #f00; */
+  border: 3px solid#fff;
+  color: #fff;
+  font-size: 1.5em;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.box:hover{
+  border: 3px solid#ebbb74;
+  font-size: 2.2em;
+}
