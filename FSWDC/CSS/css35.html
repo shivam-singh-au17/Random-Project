@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Variables/ Custom Properties</title>
+    <style>
+        :root {
+            /* --box-cloor: chartreuse; */
+
+            --primary-color: chartreuse;
+            --danger-color: rgb(23, 8, 228);
+
+            --maxw: 820px;
+        }
+
+        .box {
+
+            /* --box-cloor: chartreuse; */
+
+            /* box-shadow: 3px 3px var(--box-cloor);
+            background-color: var(--box-cloor); */
+
+            background-color: var(--primary-color);
+            box-shadow: 5px 5px var(--danger-color);
+
+            width: 200px;
+            height: 200px;
+            border: 3px solid red;
+            margin: 2px 9px;
+            padding: 50px 25px
+        }
+
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            /* background-color: var(--box-cloor); */
+
+            background-color: var(--primary-color);
+            max-width: var(--maxw);
+            margin: auto;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae laboriosam dignissimos illum
+            quas, quaerat libero delectus necessitatibus? Atque sint voluptas quibusdam, necessitatibus fuga mollitia
+            recusandae rerum, enim facere repellendus quo.</div>
+        <div class="box">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi nemo ea ad commodi aspernatur
+            non minus amet doloribus unde quas. Nam assumenda aspernatur ex. Debitis recusandae repellendus quaerat fuga
+            omnis!</div>
+        <div class="box">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate harum fugit officiis
+            impedit nisi. Repudiandae veritatis aperiam quos eaque quis quidem, inventore minus? Accusamus dolore
+            voluptatem quas sint. Expedita, labore.</div>
+    </div>
+</body>
+
+</html>

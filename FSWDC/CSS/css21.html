@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alignment</title>
+    <link href="link href=" https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100;400&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'JetBrains Mono', monospace;
+        }
+
+        .container {
+            width: 1000px;
+            border: 5px solid red;
+            margin: 150px;
+            background-color: yellowgreen;
+        }
+
+        .item {
+            border: 5px solid tan;
+            margin: 15px 5px;
+            padding: 20px 8px;
+            background-color: yellow;
+        }
+
+        #fruits {
+            float: left;
+            width: 48%;
+        }
+
+        #computer {
+            float: left;
+            width: 49%;
+        }
+
+        #toy {
+            /* float: left; */
+            clear: both;
+            width: 99%;
+        }
+
+        p,
+        h3 {
+            /* text-align: right;
+            text-align: left;
+            text-align: center; */
+            text-align: justify;
+        }
+
+        h1 {
+            margin: auto;
+            width: 400px;
+        }
+
+        body {
+            background-color: violet;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1> welcome to my store </h1>
+        <div id="fruits" class="item">
+            <h2>fruits</h2>
+            <p id="fruitspara" class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis ipsum fugiat
+                tempora inventore autem deserunt ratione blanditiis dicta vitae nostrum, accusantium maxime nulla
+                laudantium fuga vero deleniti recusandae cumque ad? Lorem ipsum dolor sit amet, consectetur adipisicing
+                elit. Ipsam eaque blanditiis, dolorem voluptates dolore iure laborum necessitatibus, esse ratione
+                numquam sed maxime similique modi cumque recusandae itaque iusto! Rerum, odit!</p>
+        </div>
+
+
+        <div id="computer" class="item">
+            <h3>computer</h3>
+            <p id="computerpara" class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis ipsum
+                fugiat tempora inventore autem deserunt ratione blanditiis dicta vitae nostrum, accusantium maxime
+                nulla laudantium fuga vero deleniti recusandae cumque ad?Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Alias explicabo, fugit laudantium nulla corrupti provident! Iste, fugit omnis
+                consequuntur adipisci beatae eum in, nihil alias aut porro, impedit delectus fugiat. </p>
+        </div>
+
+
+        <div id="toy" class="item">
+            <h4>toy</h4>
+            <p id="toypara" class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis ipsum
+                fugiat tempora inventore autem deserunt ratione blanditiis dicta vitae nostrum, accusantium
+                maxime nulla laudantium fuga vero deleniti recusandae cumque ad?Lorem ipsum dolor, sit amet consectetur
+                adipisicing elit. Obcaecati eveniet dignissimos quaerat, tempora eius voluptate fugiat aperiam enim
+                earum culpa. Recusandae consequatur possimus impedit harum alias. Voluptas porro vitae excepturi? </p>
+        </div>
+
+        <div id="bool" class="item">
+            <h1>bool</h1>
+            <p id="boolpara" class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis ipsum
+                fugiat tempora inventore autem deserunt ratione blanditiis dicta vitae nostrum, accusantium
+                maxime nulla laudantium fuga vero deleniti recusandae cumque ad?</p>
+        </div>
+    </div>
+</body>
+
+</html>

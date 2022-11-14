@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position property</title>
+    <style>
+        .container {
+            border: 2px solid rgb(9, 240, 109);
+            background-color: rgb(218, 166, 129);
+            height: 5000px;
+        }
+
+        /* CSS position:static(default), relative, absolute, fixed, sticky; */
+        .box {
+            display: inline-block;
+            border: 5px solid red;
+            width: 150px;
+            height: 150px;
+            margin: 5px;
+        }
+
+        #box3 {
+
+            /* relative: relative to its normal position and will leave a gap at its normal position;
+            position: relative; */
+
+            /* absolute: relative to the position of its first parent */
+            /* position: absolute; 
+            top: 39px;
+            left: 125px;*/
+
+            /* fixed: Position the element relative to the browser window
+            position: fixed;
+            right: 5px;
+            bottom: 3px; */
+
+            position: sticky;
+            top: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="box" id="box1">1</div>
+        <div class="box" id="box2">2</div>
+        <div class="box" id="box3">MEET SHIVAM SINGH</div>
+        <div class="box" id="box4">4</div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+
+        }
+
+        body {
+            background-color: #4cb3bb;
+        }
+
+        .container {
+            background-color: cadetblue;
+            border: 10px solid #0024ff;
+            /* we can set margin/padding for top, bottom, left and right like this
+
+            padding-left: 70px;
+            padding-right: 70px;
+            padding-top: 70px;
+            padding-bottom: 70px;
+
+                    AND 
+
+            margin-top: 90px;
+            margin-bottom: 90px;
+            margin-left: 90px;
+            margin-right: 90px;*/
+
+            /* padding: 40px 45px 50px 55px; */
+            /* padding: top right bottom left; */
+
+            /* margin: 30px 40px 50px 60px; */
+            /* margin: top right bottom left; */
+
+            /* padding: 50px;
+            margin: 25px; */
+
+            /* padding: y(top/bottom) x(left/right); */
+            padding: 40px 60px;
+
+            /* margin: y(top/bottom) x(left/right); */
+            margin: 50px 70px;
+
+            border-radius: 40px;
+            width: 500px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>This is my heading</h2>
+        <p id="first">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio, blanditiis! Unde vitae vero
+            accusamus eaque facilis soluta, repudiandae quod explicabo laudantium recusandae aut iste porro est?
+            Molestias laudantium quos facilis.</p>
+    </div>
+
+    <div class="container">
+        <h2>This is my heading</h2>
+        <p id="second">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio, blanditiis! Unde vitae vero
+            accusamus eaque facilis soluta, repudiandae quod explicabo laudantium recusandae aut iste porro est?
+            Molestias laudantium quos facilis.</p>
+    </div>
+    <div class="container">
+        <h2>This is my heading</h2>
+        <p id="second">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio, blanditiis! Unde vitae vero
+            accusamus eaque facilis soluta, repudiandae quod explicabo laudantium recusandae aut iste porro est?
+            Molestias laudantium quos facilis.</p>
+    </div>
+    <div class="container">
+        <h2>This is my heading</h2>
+        <p id="third">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio, blanditiis! Unde vitae
+            vero accusamus eaque facilis soluta, repudiandae quod explicabo laudantium recusandae aut iste porro
+            est? Molestias laudantium quos facilis.</p>
+
+    </div>
+</body>
+
+</html>

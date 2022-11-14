@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid + Media Queries</title>
+    <style>
+        .container {
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-areas:
+                'navbar navbar navbar navbar'
+                'section section section aside'
+                'footer footer footer footer ';
+        }
+
+
+
+        @media only screen and (max-width: 500px) {
+            body {
+                background-color: rgb(235, 219, 3);
+            }
+            .container {
+                grid-template-areas:
+                    'navbar navbar navbar navbar'
+                    'section section section section'
+                    'aside aside aside aside'
+                    'footer footer footer footer ';
+            }
+
+            span {
+                display: block;
+                text-align: center;
+            }
+
+            aside {
+                display: none;
+            }
+        }
+
+        @media only screen and (min-width: 500px) and (max-width: 1000px) {
+            body {
+                background-color: red;
+            }
+
+            .container {
+                grid-template-areas:
+                    'navbar navbar navbar navbar'
+                    'section section section section'
+                    'aside aside aside aside'
+                    'footer footer footer footer ';
+            }
+
+            span {
+                display: block;
+                text-align: center;
+            }
+
+            aside {
+                display: none;
+            }
+        }
+
+        @media (min-width: 1000px) and (max-width: 1300px) {
+            body {
+                background-color: rgb(17, 204, 195);
+            }
+
+
+        }
+
+        @media (min-width: 1300px) {
+            body {
+                background-color: rgb(70, 18, 192);
+            }
+        }
+
+        .bdr {
+            border: 2px solid black;
+            padding: 10px 23px;
+            background-color: chartreuse;
+        }
+
+        nav {
+            grid-area: navbar;
+        }
+
+        section {
+            grid-area: section;
+        }
+
+        aside {
+            grid-area: aside;
+        }
+
+        footer {
+            grid-area: footer;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <nav class="bdr">
+            <span> Home </span>
+            <span>About </span>
+            <span>Offers</span>
+            <span>Cntacts</span>
+        </nav>
+        <section class="bdr">
+            <h2>Learn About CSS in Hindi</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci magni nostrum consequatur
+                exercitationem labore mollitia ipsum nihil sit nulla natus? Provident laboriosam eum exercitationem
+                aliquid esse at eligendi beatae voluptatibus unde. Dolore consequuntur deleniti asperiores repellat
+                repudiandae earum totam ipsam rem omnis, non ab at nihil iusto expedita mollitia dolores, culpa, labore
+                exercitationem numquam qui doloribus voluptate voluptas incidunt! Repellat officiis, iste incidunt
+                impedit repudiandae ratione corporis eaque! Placeat cupiditate doloremque earum. Repellat iusto, natus,
+                enim culpa ab illo minus eligendi, quisquam asperiores doloribus autem eveniet sit eius fugit quibusdam
+                explicabo in quo necessitatibus. Laudantium perferendis ad neque sed, iusto dignissimos error
+                repudiandae. Inventore saepe alias dolor deleniti. Nesciunt libero hic quo modi veniam provident sit est
+                ea odio dignissimos.</p>
+        </section>
+        <aside class="bdr">
+            <h1>  More about us </h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse nobis temporibus repellendus beatae assumenda iste expedita cumque, blanditiis aliquam quasi nisi! Vitae autem quae fugit ullam corrupti odit. Vel, quia.</p>
+        </aside>
+    </div>
+    <footer class="bdr">Copyright Shivamsingh4458 2020</footer>
+</body>
+
+</html>
