@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .flex {
+            display: flex;
+        }
+
+        .flex >div {
+            background-color: tomato;
+            width: 200px;
+            margin: 20px;
+            height: 200px;
+            border-radius: 5%;
+        }
+        #top > div:nth-child(2),#mid > div:nth-child(1),#bot > div:nth-child(3){
+            flex-grow: 1;
+        }
+
+        /* #top > div:nth-child(2),#mid > div:nth-child(1),#bot > div:nth-child(3){
+            flex-basis: 500px;
+        }  */
+    </style> 
+</head>
+
+<body>
+    <div id="top" class="flex">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <div id="mid" class="flex">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <div id="bot" class="flex">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+
+
+</body>
+
+</html>

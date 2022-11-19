@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO</title>
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <form>
+        <input type="text" id="item1">
+        <input type="submit" value="Add Name"> <br>
+        <input type="text" id="item2">
+        <input type="submit" value="Add Age"> <br>
+        <input type="text" id="item3">
+        <input type="submit" value="Add Science Marks"> <br>
+        <input type="text" id="item4">
+        <input type="submit" value="Add English Marks"> <br>
+        <input type="text" id="item5">
+        <input type="submit" value="Add Mathematics Marks"> <br>
+
+    </form>
+    <table>
+
+    </table>
+    <script>
+        var form = document.querySelector("form")
+        var table = document.querySelector("table")
+
+
+        function addItem(event) {
+
+            event.preventDefault();
+            console.log("Submit");
+
+            var item1 = document.getElementById("item1").value;
+
+            if (item1.length > 0) {
+
+
+
+                var rowTR1 = document.createElement("tr");
+
+                var col1TD1 = document.createElement("td");
+                var col2TD2 = document.createElement("td");
+                var col3TD3 = document.createElement("td");
+
+                var btn = document.createElement("button");
+                var btn2 = document.createElement("button");
+
+
+
+                col1TD1.textContent = item1;
+                col2TD2.textContent = "Name:";
+                btn.textContent = "Mark Submited";
+                btn2.textContent = "Delete";
+
+                btn.addEventListener("click", complit)
+                btn2.addEventListener("click", deleteItem)
+
+
+
+                col2TD2.appendChild(btn);
+                col3TD3.appendChild(btn2);
+
+                rowTR1.appendChild(col1TD1);
+                rowTR1.appendChild(col2TD2);
+                rowTR1.appendChild(col3TD3);
+
+                table.appendChild(rowTR1);
+
+                document.getElementById("item1").value = "";
+
+            }
+
+            function complit(event) {
+                var target = event.target;
+                target.textContent = "Submited";
+                target.style.background = "green"
+                target.removeEventListener("click", complit);
+
+            }
+
+            function deleteItem(event) {
+                var target = event.target;
+                target.parentNode.parentNode.remove();
+
+            }
+
+        }
+
+
+
+        function addItem2(event) {
+
+            event.preventDefault();
+            console.log("Submit");
+
+            var item2 = document.getElementById("item2").value;
+
+            if (item2.length > 0) {
+
+
+
+                var rowTR1 = document.createElement("tr");
+
+                var col1TD1 = document.createElement("td");
+                var col2TD2 = document.createElement("td");
+                var col3TD3 = document.createElement("td");
+
+                var btn = document.createElement("button");
+                var btn2 = document.createElement("button");
+
+
+
+                col1TD1.textContent = item2;
+                col2TD2.textContent = "Age:";
+                btn.textContent = "Mark Submited";
+                btn2.textContent = "Delete";
+
+                btn.addEventListener("click", complit)
+                btn2.addEventListener("click", deleteItem)
+
+
+
+                col2TD2.appendChild(btn);
+                col3TD3.appendChild(btn2);
+
+                rowTR1.appendChild(col1TD1);
+                rowTR1.appendChild(col2TD2);
+                rowTR1.appendChild(col3TD3);
+
+                table.appendChild(rowTR1);
+
+                document.getElementById("item2").value = "";
+
+            }
+
+            function complit(event) {
+                var target = event.target;
+                target.textContent = "Submited";
+                target.style.background = "green"
+                target.removeEventListener("click", complit);
+
+            }
+
+            function deleteItem(event) {
+                var target = event.target;
+                target.parentNode.parentNode.remove();
+
+            }
+
+        }
+
+
+        function addItem3(event) {
+
+            event.preventDefault();
+            console.log("Submit");
+
+            var item3 = document.getElementById("item3").value;
+
+            if (item3.length > 0) {
+
+
+
+                var rowTR1 = document.createElement("tr");
+
+                var col1TD1 = document.createElement("td");
+                var col2TD2 = document.createElement("td");
+                var col3TD3 = document.createElement("td");
+
+                var btn = document.createElement("button");
+                var btn2 = document.createElement("button");
+
+
+
+                col1TD1.textContent = item3;
+                col2TD2.textContent = "Science:";
+                btn.textContent = "Mark Submited";
+                btn2.textContent = "Delete";
+
+                btn.addEventListener("click", complit)
+                btn2.addEventListener("click", deleteItem)
+
+
+
+                col2TD2.appendChild(btn);
+                col3TD3.appendChild(btn2);
+
+                rowTR1.appendChild(col1TD1);
+                rowTR1.appendChild(col2TD2);
+                rowTR1.appendChild(col3TD3);
+
+                table.appendChild(rowTR1);
+
+                document.getElementById("item3").value = "";
+
+            }
+
+            function complit(event) {
+                var target = event.target;
+                target.textContent = "Submited";
+                target.style.background = "green"
+                target.removeEventListener("click", complit);
+
+            }
+
+            function deleteItem(event) {
+                var target = event.target;
+                target.parentNode.parentNode.remove();
+
+            }
+
+        }
+        function addItem4(event) {
+
+            event.preventDefault();
+            console.log("Submit");
+
+            var item4 = document.getElementById("item4").value;
+
+            if (item4.length > 0) {
+
+
+
+                var rowTR1 = document.createElement("tr");
+
+                var col1TD1 = document.createElement("td");
+                var col2TD2 = document.createElement("td");
+                var col3TD3 = document.createElement("td");
+
+                var btn = document.createElement("button");
+                var btn2 = document.createElement("button");
+
+
+
+                col1TD1.textContent = item4;
+                col2TD2.textContent = "English:";
+                btn.textContent = "Mark Submited";
+                btn2.textContent = "Delete";
+
+                btn.addEventListener("click", complit)
+                btn2.addEventListener("click", deleteItem)
+
+
+
+                col2TD2.appendChild(btn);
+                col3TD3.appendChild(btn2);
+
+                rowTR1.appendChild(col1TD1);
+                rowTR1.appendChild(col2TD2);
+                rowTR1.appendChild(col3TD3);
+
+                table.appendChild(rowTR1);
+
+                document.getElementById("item4").value = "";
+
+            }
+
+            function complit(event) {
+                var target = event.target;
+                target.textContent = "Submited";
+                target.style.background = "green"
+                target.removeEventListener("click", complit);
+
+            }
+
+            function deleteItem(event) {
+                var target = event.target;
+                target.parentNode.parentNode.remove();
+
+            }
+
+        }
+        function addItem5(event) {
+
+            event.preventDefault();
+            console.log("Submit");
+
+            var item5 = document.getElementById("item5").value;
+
+            if (item5.length > 0) {
+
+
+
+                var rowTR1 = document.createElement("tr");
+
+                var col1TD1 = document.createElement("td");
+                var col2TD2 = document.createElement("td");
+                var col3TD3 = document.createElement("td");
+
+                var btn = document.createElement("button");
+                var btn2 = document.createElement("button");
+
+
+
+                col1TD1.textContent = item5;
+                col2TD2.textContent = "Maths:";
+                btn.textContent = "Mark Submited";
+                btn2.textContent = "Delete";
+
+                btn.addEventListener("click", complit)
+                btn2.addEventListener("click", deleteItem)
+
+
+
+                col2TD2.appendChild(btn);
+                col3TD3.appendChild(btn2);
+
+                rowTR1.appendChild(col1TD1);
+                rowTR1.appendChild(col2TD2);
+                rowTR1.appendChild(col3TD3);
+
+                table.appendChild(rowTR1);
+
+                document.getElementById("item5").value = "";
+
+            }
+
+            function complit(event) {
+                var target = event.target;
+                target.textContent = "Submited";
+                target.style.background = "green"
+                target.removeEventListener("click", complit);
+
+            }
+
+            function deleteItem(event) {
+                var target = event.target;
+                target.parentNode.parentNode.remove();
+
+            }
+
+        }
+
+
+        form.addEventListener('submit', addItem);
+        form.addEventListener('submit', addItem2);
+        form.addEventListener('submit', addItem3);
+        form.addEventListener('submit', addItem4);
+        form.addEventListener('submit', addItem5);
+
+
+    </script>
+</body>
+
+</html>

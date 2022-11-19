@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        #layout {
+            display: grid;
+            gap: 25px;
+            grid-template-columns: 150px 150px 150px 150px;
+            grid-template-rows: 150px 150px 150px 150px;
+            justify-content: center;
+            /* width: 700px;
+            margin: auto; */
+        }
+        #layout > div{
+            font-size: 32px;
+            background-color: sienna;
+        }
+        #layout > div:nth-child(8){
+            grid-row-start: 3;
+            grid-column-start: 1;
+        }
+        #layout > div:nth-child(9){
+            grid-row-start: 3;
+            grid-column-start: 2;
+        }
+        #layout > div:nth-child(10){
+            grid-row-start: 4;
+            grid-column-start: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="layout">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+    </div>
+
+</body>
+
+</html>

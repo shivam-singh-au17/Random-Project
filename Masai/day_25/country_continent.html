@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>continent</title>
+</head>
+
+<body>
+    <select id="continent_select"> 
+        <option id="contry1" value="India"> India </option>
+        <option id="contry2" value="United States of America"> United States of America </option>
+        <option id="contry3" value="China"> China </option>
+        <option id="contry4" value="Nepal"> Nepal </option>
+        <option id="contry5" value="Australia"> Australia </option>
+        <option id="contry6" value="France"> France </option>
+        <option id="contry7" value="Germany"> Germany </option>
+        <option id="contry8" value="South Africa"> South Africa </option>
+        <option id="contry9" value="Nigeria"> Nigeria </option>
+        <option id="contry10" value="Mexico"> Mexico </option>
+        <option id="contry11" value="Argentina"> Argentina </option>
+        <option id="contry12" value="Brazil"> Brazil </option>
+        <option id="contry13" value="Canada"> Canada </option>
+        <option id="contry14" value="Singapore"> Singapore </option>
+        <option id="contry15" value="Sweden"> Sweden </option>
+    </select>
+    <button onclick="submit()">Continent </button>
+
+
+
+    <script>
+
+        function submit() {
+            var contry = document.getElementById("continent_select");
+            
+            switch (contry.value) {
+                case "India":
+                    alert(document.getElementById("contry1").value = "Asia ");
+                    break;
+                case "United States of America":
+                    alert(document.getElementById("contry2").value = "North America ");
+                    break;
+                case "China":
+                    alert(document.getElementById("contry3").value = " Asia");
+                    break;
+                case "Nepal":
+                    alert(document.getElementById("contry4").value = "Asia ");
+                    break;
+                case "Australia":
+                    alert(document.getElementById("contry5").value = "Oceania ");
+                    break;
+                case "France":
+                    alert(document.getElementById("contry6").value = "Europe ");
+                    break;
+                case "Germany":
+                    alert(document.getElementById("contry7").value = "Europe ");
+                    break;
+                case "South Africa":
+                    alert(document.getElementById("contry8").value = "Republic of Sauth Africa ");
+                    break;
+                case "Nigeria":
+                    alert(document.getElementById("contry9").value = "Africa ");
+                    break;
+                case "Mexico":
+                    alert(document.getElementById("contry10").value = "North America ");
+                    break;
+                case "Argentina":
+                    alert(document.getElementById("contry11").value = "Sauth America ");
+                    break;
+                case "Brazil":
+                    alert(document.getElementById("contry12").value = "Sauth America ");
+                    break;
+                case "Canada":
+                    alert(document.getElementById("contry13").value = "North America ");
+                    break;
+                case "Singapore":
+                    alert(document.getElementById("contry14").value = "Asia ");
+                    break;
+                case "Sweden":
+                    alert(document.getElementById("contry15").value = "Europe ");
+                    break;
+                default:
+                    alert(document.getElementById("contry16").value = " ");
+                    break;
+            }
+        }
+    </script>
+</body>
+
+</html>
+ 
+

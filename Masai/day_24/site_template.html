@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        #cont {
+            font-size: 40px;
+            max-width: 1000px;
+            margin: auto;
+            display: grid;
+            gap: 35px;
+            grid-template: "nav nav nav nav nav"
+                "left right right right right";
+
+        }
+
+        #nav {
+            background-color: rgb(131, 240, 8);
+            height: 80px;
+            grid-area: nav;
+
+        }
+
+        #left {
+            background: rgb(238, 20, 20);
+            height: 700px;
+            grid-area: left;
+        }
+
+        #right {
+            background: rgb(43, 11, 228);
+            height: 700px;
+            grid-area: right;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="cont">
+        <div id="nav"></div>
+        <div id="left"></div>
+        <div id="right"></div>
+    </div>
+</body>
+
+</html>

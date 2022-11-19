@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO</title>
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <form>
+        <input type="text" id="item">
+        <input type="Submit" value="Add Item">
+    </form>
+    <table>
+        <!-- <tr>
+            <td>#Item</td>
+            <td><button>Mark Complite</button></td>
+            <td><button>Delete</button></td>
+        </tr> -->
+    </table>
+    <script>
+        var form = document.querySelector("form");
+        var table = document.querySelector("table");
+
+        function comlited(event) {
+            var target = event.target;
+            target.textContent = "Complited"
+            target.style.background = "green"
+            target.removeEventListener("click", comlited)
+        }
+
+        function markDelete(event) {
+            var target = event.target;
+            target.parentNode.parentNode.remove();
+        }
+
+        function addItem(event) {
+
+            event.preventDefault();
+            console.log("Submit");
+
+            var item = document.getElementById("item").value;
+
+            if (item.length > 0) {
+
+                var rowTR = document.createElement("tr");
+                var col1td1 = document.createElement("td");
+                var col2td2 = document.createElement("td");
+                var col3td3 = document.createElement("td");
+
+                var btn1 = document.createElement("button");
+                var btn2 = document.createElement("button");
+
+                col1td1.textContent = item;
+                btn1.textContent = "Mark Complited";
+                btn2.textContent = "Delete";
+
+                btn1.addEventListener("click", comlited);
+                btn2.addEventListener("click", markDelete);
+
+
+                col2td2.appendChild(btn1);
+                col3td3.appendChild(btn2);
+
+                rowTR.appendChild(col1td1);
+                rowTR.appendChild(col2td2);
+                rowTR.appendChild(col3td3);
+
+                table.appendChild(rowTR);
+
+                document.getElementById("item").value = "";
+
+            }
+
+        }
+
+        form.addEventListener("click", addItem);
+
+    </script>
+</body>
+
+</html>

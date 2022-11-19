@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        #layout1,
+        #layout2,
+        #layout3,
+        #layout4 {
+            display: flex;
+        }
+
+        #layout1>div,
+        #layout2>div,
+        #layout3>div,
+        #layout4>div {
+            background-color: tomato;
+            flex-basis: 150px;
+            margin: 10px;
+            height: 150px;
+            border-radius: 5%;
+        }
+
+        #cont {
+            display: grid;
+            gap: 25px;
+            grid-template-columns: 180px 180px 180px 180px 180px;
+            grid-template-rows: 180px 180px 180px 180px 180px;
+        }
+
+        #cont>div {
+            border-radius: 15px;
+        }
+
+        #cont>div {
+            font-size: 32px;
+            background-color: sienna;
+        }
+
+        #box2 {
+            grid-area: 1 / 2 / 1 / 5;
+
+        }
+
+        #box4 {
+            grid-area: 2 / 1 / 2 / 4;
+        }
+
+        #box9 {
+            grid-area: 3 / 3 / 3 / 6;
+        }
+
+
+        #container {
+            display: grid;
+            font-size: 50PX;
+            gap: 50px;
+            grid-template: "nav nav nav"
+                "left left  right1"
+                "left left right2"
+                "left left  right3";
+        }
+
+        #nav {
+            background-color: rgb(255, 251, 0);
+            height: 100px;
+            grid-area: nav;
+
+        }
+
+        #left {
+            background: rgb(255, 0, 0);
+            height: 700px;
+            grid-area: left;
+        }
+
+        #right1 {
+            background: rgb(61, 255, 36);
+            height: 200px;
+            grid-area: right1;
+        }
+
+        #right2 {
+            background: rgb(61, 255, 36);
+            height: 200px;
+            grid-area: right2;
+        }
+
+        #right3 {
+            background: rgb(61, 255, 36);
+            height: 200px;
+            grid-area: right3;
+        }
+
+        /* Extra small devices (phones, 600px and down) */
+        @media only screen and (max-width: 600px) {
+            #container {
+                grid-template: "nav "
+                    "left "
+                    "right1 "
+                    "right2 "
+                    "right3";
+            }
+            
+        }
+
+        /* Medium devices (landscape tablets, 768px and up) */
+         @media only screen and (min-width: 600px) and (max-width: 900px) {
+            #container {
+                grid-template: "nav nav nav"
+                    "left left left"
+                    "right1 right2 right3";
+            }
+        }
+
+        /* Large devices (laptops/desktops, 992px and up)  */
+        @media only screen and (min-width: 900px) and (max-width: 1767px){
+            #container {
+                grid-template: "nav nav nav"
+                    "left left  right1"
+                    "left left right2"
+                    "left left  right3";
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="layout1">
+        <div>1</div>
+    </div>
+    <div id="layout2">
+        <div>2</div>
+        <div>3</div>
+    </div>
+    <div id="layout3">
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+    </div>
+    <div id="layout4">
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+    </div>
+
+    <br> <br>
+    <br> <br>
+    <br> <br>
+
+    <div id="cont">
+        <div>1</div>
+        <div id="box2">2</div>
+        <div>3</div>
+        <div id="box4">4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div id="box9">9</div>
+    </div>
+
+    <div id="container">
+        <div id="nav">Navigation</div>
+        <div id="left">LEFT BOX</div>
+        <div id="right1">RIGHT BOX 1</div>
+        <div id="right2">RIGHT BOX 2</div>
+        <div id="right3">RIGHT BOX 3</div>
+    </div>
+
+
+</body>
+
+</html>

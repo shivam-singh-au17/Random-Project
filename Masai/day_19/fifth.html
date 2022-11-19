@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        #second>div {
+            float: left;
+            width: 22vw;
+            height: 22vw;
+            margin: 1vw;
+            background-color: teal;
+            max-width: 200px;
+            max-height: 200px;
+            border-radius: 10px;
+        }
+
+        #second>div:nth-child(2),
+        div>div:nth-child(4),
+        div>div:nth-child(9) {
+            width: 66vh;
+            max-width: 600px;
+        }
+
+        #second>div:nth-child(4),
+        div>div:nth-child(7) {
+            clear: both;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="second">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+
+</body>
+
+</html>

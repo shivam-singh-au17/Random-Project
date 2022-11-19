@@ -1,0 +1,28 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>My color should change when I double click the button!</h1>
+    <button id="changeBTN2Clr">Click here to change my color</button>
+    <script>
+        var BTN2Clr = document.querySelector('#changeBTN2Clr');
+
+        function random(num) {
+            return Math.floor(Math.random() * num);
+        }
+
+        function ClrChange() {
+            var randomColor = 'rgb(' + random(212) + ',' + random(212) + ',' + random(212) + ')';
+
+            BTN2Clr.style.backgroundColor = randomColor
+        }
+        BTN2Clr.addEventListener('dblclick', ClrChange)
+    </script>
+</body>

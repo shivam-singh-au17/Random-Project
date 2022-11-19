@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>layout_4.html</title>
+    <style>
+        #cont {
+            font-size: 60px;
+            display: grid;
+            gap: 35px;
+            grid-template: "nav nav nav nav"
+                "box1 box2 box3 box4";
+
+        }
+
+        #nav {
+            background-color: rgb(131, 240, 8);
+            height: 80px;
+            grid-area: nav;
+
+        }
+
+        #box1 {
+            background: rgb(238, 20, 20);
+            height: 500px;
+            grid-area: box1;
+        }
+
+        #box2 {
+            background: rgb(43, 11, 228);
+            height: 500px;
+            grid-area: box2;
+        }
+
+        #box3 {
+            background: rgb(0, 235, 251);
+            height: 500px;
+            grid-area: box3;
+        }
+
+        #box4 {
+            background: rgb(255, 0, 200);
+            height: 500px;
+            grid-area: box4;
+        }
+
+        /* Extra small devices (phones, 600px and down) */
+        @media only screen and (max-width: 600px) {
+              #cont {
+                grid-template: "nav"
+                    "box1 "
+                    "box4"
+                    "box2"
+                    "box3";
+            }
+        } 
+
+        /* Small devices (portrait tablets and large phones, 600px and up) */
+        /* @media only screen and (min-width: 600px) {
+          
+        } */
+
+        /* Medium devices (landscape tablets, 768px and up) */
+        @media only screen and (min-width: 600px) and (max-width: 768px) {
+            #cont {
+                grid-template: "nav nav"
+                    "box1  box3 "
+                    "box2 box4";
+            }
+        }
+
+        /* Large devices (laptops/desktops, 992px and up) */
+        @media only screen and (min-width: 992px) {
+            #cont {
+                grid-template: "nav nav nav nav"
+                    "box1 box2 box3 box4";
+            }
+        }
+
+        /* Extra large devices (large laptops and desktops, 1200px and up) */
+        /* @media only screen and (min-width: 1200px) {
+            ...
+        } */
+    </style>
+</head>
+
+<body>
+    <div id="cont">
+        <div id="nav">Navigation</div>
+        <div id="box1">Box 1</div>
+        <div id="box2">Box 2</div>
+        <div id="box3">Box 3</div>
+        <div id="box4">Box 4</div>
+    </div>
+</body>
+
+</html>

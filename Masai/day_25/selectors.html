@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practise Selectors</title>
+</head>
+
+<body>
+    <h1>First H1</h1>
+    <h1>Second H1</h1>
+    <h3>First H3</h3>
+    <h3>Second H3</h3>
+    <h5>First H5</h5>
+    <h5>Second H5</h5>
+    <h5>Third H5</h5>
+    <div class="purple">First DIV</div>
+    <div class="yellow">Second DIV</div>
+    <div class="orange">Third DIV</div>
+    <p class="purple">First P</p>
+    <p class="yellow">Second P</p>
+    <p class="orange">Third P</p>
+    <hr />
+    <button onclick="ChangeH1()" >Change H1</button>
+    <button onclick="ChangeH3()" >Change H3</button>
+    <button onclick="ChangeH5()" >Change H5</button>
+    <button onclick="ChangePurple()" >Change Purple</button>
+    <button onclick="ChangeYellow()" >Change Yellow</button>
+    <button onclick="Changecoler('orange')" >Change Orange</button>
+    <script>
+        function ChangeH1(){
+            var firsth1 = document.querySelectorAll("h1")[0];
+            firsth1.style.color = "green"
+        }
+        function ChangeH3(){
+            var allh3 = document.getElementsByTagName("h3");
+            allh3[0].style.color = "blue"
+            allh3[1].style.color = "blue"
+        }
+        function ChangeH5(){
+            var allh5 = document.querySelectorAll("h5");
+            for (var i=0;i<allh5.length;i++){
+                allh5[i].style.color = "red"
+            }
+        }
+        function ChangePurple(){
+            var allpurpal = document.getElementsByClassName("purple");
+            allpurpal[0].style.color = "purple"
+            allpurpal[1].style.color = "purple"
+        }
+        function ChangeYellow(){
+            var allYellow = document.getElementsByClassName("yellow");
+            for (var i=0; i<allYellow.length;i++){
+                allYellow[i].style.color = "yellow"
+            }
+        }
+        function Changecoler(color){
+            var allOrange = document.getElementsByClassName(color);
+            for (var i=0;i<allOrange.length;i++){
+                allOrange[i].style.color = color;
+            }
+        }
+    </script>
+</body>
+
+</html>
+
+
+
+
+<!-- On clicking the button Change H1 the colour of first <h1> should turn to green
+    On clicking the button Change H3 the colour of all <h3> should turn to blue
+    On clicking the button Change H5 the colour of all <h5> should turn to red
+    On clicking Change Purple all the elements with the class purple should change to purple
+    On clicking Change Yellow all the elements with the class yellow should change to yellow
+    On clicking Change Orange all the elements with the class orange should change to orange -->

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <input type="text" id="year">
+    <button onclick="chekAge()">Check Age</button>
+    <p id="message"></p>
+    <script>
+        function chekAge() {
+            var year = Number(document.getElementById("year").value);
+            var age = 2021 - year;
+            if (age == 18) {
+                document.getElementById("message").textContent = "Just Old"
+            } else if (age > 18) {
+                document.getElementById("message").textContent = "You can drive in india"
+            } else {
+                document.getElementById("message").textContent = "Cnt't Drive"
+            }
+        }
+    </script>
+</body>
+
+</html>

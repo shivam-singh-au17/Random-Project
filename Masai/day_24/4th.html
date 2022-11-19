@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        #cont {
+            display: grid;
+            gap: 30px;
+            grid-template: "nav nav"
+                "left right";
+        }
+
+        #nav {
+            background-color: tomato;
+            height: 50px;
+            grid-area: nav;
+
+        }
+
+        #left {
+            background: rgb(184, 68, 68);
+            height: 300px;
+            grid-area: left;
+        }
+
+        #right {
+            background: rgb(27, 163, 9);
+            height: 300px;
+            grid-area: right;
+        }
+
+
+        /* Extra small devices (phones, 600px and down)
+        @media only screen and (max-width: 600px) {
+            ...
+        } */
+/* 
+        Small devices (portrait tablets and large phones, 600px and up) */
+        @media only screen and (min-width: 600px) {
+            #cont {
+                grid-template: "nav"
+                    "left"
+                    " right";
+            } 
+        }
+
+        /* Medium devices (landscape tablets, 768px and up)
+        @media only screen and (min-width: 768px) {
+            ...
+        } */
+
+        /* Large devices (laptops/desktops, 992px and up)  */
+        /* @media only screen and (min-width: 992px) {
+            #cont {
+                grid-template: "nav nav"
+                    "left right"
+            }
+        } */
+
+        /* Extra large devices (large laptops and desktops, 1200px and up)
+        @media only screen and (min-width: 1200px) {
+            ...
+        } */
+    </style>
+</head>
+
+<body>
+    <div id="cont">
+        <div id="nav">1</div>
+        <div id="left">2</div>
+        <div id="right">3</div>
+    </div>
+
+
+</body>
+
+</html>

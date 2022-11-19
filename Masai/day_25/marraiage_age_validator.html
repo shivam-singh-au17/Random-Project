@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <div>
+        <select id="gender">
+            <option >MALE</option>
+            <option >FEMALE</option>
+        </select>
+        <BR></BR>
+        <input type="number" id="year">
+        <button onclick="checkAge()">Age</button>
+    </div>
+    <script>
+        function checkAge() {
+            var year = document.getElementById("year").value;
+            var gender = document.getElementById("gender").value;
+            var age = 2021 - year;
+            if (age >= 21 && gender == "MALE") {
+                alert("LEGAL AGE")
+            } else if (age >= 18 && gender == "FEMALE") {
+                alert("LEGAL AGE")
+            } else {
+                alert("NOT LEGAL AGE")
+            }
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practise Creators</title>
+</head>
+
+<body>
+    <div id="headings">
+    </div>
+    <div id="cont">
+    </div>
+    <ul id="hobbies">
+        <li>Coding</li>
+    </ul>
+    <button onclick="CreateH1()">Create H1</button>
+    <button onclick="Create2H3()">Create 2 H3</button>
+    <button onclick="CreatePara()">Create Paragraphs</button>
+    <button onclick="AddHobbies()">Add Hobbies</button>
+    <button onclick="AddCopy()">Add Copyright</button>
+    <script>
+        function CreateH1() {
+            var h1 = document.createElement("h1");
+            h1.textContent = "Shivam Singh Masai School"
+            var parent = document.getElementById("headings");
+            parent.append(h1)
+        }
+        function Create2H3() {
+            var h3Addr = document.createElement("h3");
+            h3Addr.textContent = "Vill Rajauli Post Adhwar Dict Mirzapur";
+            var h3city = document.createElement("h3");
+            h3city.textContent = "MIRZAPUR";
+            var parent = document.getElementById("headings");
+            parent.appendChild(h3Addr);
+            parent.appendChild(h3city);
+        }
+        function CreatePara() {
+            var parent = document.getElementById("cont");
+            for (var i = 1; i <= 10; i++) {
+                var para = document.createElement("p");
+                para.textContent = "hello masai school" + i;
+                parent.appendChild(para)
+            }
+        }
+        var hobbies = ["shivam", "singh", "masai", "school"];
+        function AddHobbies() {
+            var parent = document.getElementById("hobbies");
+            for (var i = 0; i < hobbies.length; i++) {
+                var MyHobbies = document.createElement("li");
+                MyHobbies.textContent = hobbies[i];
+                parent.appendChild(MyHobbies);
+            }
+        }
+        function AddCopy(){
+            var copy = document.createElement("p");
+            copy.textContent = "@ masai 2019";
+            var bodynew = document.body;
+            var btn = document.querySelector("button");
+            bodynew.insertBefore(copy, btn);
+        }
+    </script>
+</body>
+
+</html>
+
+
+
+
+
+<!-- On clicking the button Create H1 create a <h1> with the content inside the
+    with the idheadings`
+    On clicking the button Create 2 H3 create two <h3> with the content <Your Address> and <Your City & State> inside the <div> with the id headings
+    On clicking the button Create Paragraphs create ten <p> with the content Content 1 to Content 10 inside the div with the id cont (HINT: Use loops)
+    On clicking the button Add Hobbies add all the hobbies as a <li> element below Coding in the given <ul> the list is already provided to you as a variable inside script tag
+    On clicking the button Add Copyright add a p tag with the text @ masai 2019 before the button Create H1 -->

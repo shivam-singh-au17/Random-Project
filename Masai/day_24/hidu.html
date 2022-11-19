@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HINDU</title>
+    <style>
+        body {
+            background-color: rgb(233, 246, 246);
+        }
+
+        #continer {
+            display: grid;
+            gap: 15px;
+            font-size: 20px;
+            grid-template: "box1 box2"
+                "box1 box4"
+                "box1 box6"
+                "box7 box8";
+        }
+
+        .box1 {
+            color: white;
+            background-color: rgb(34, 45, 107);
+            grid-area: box1;
+            height: 450px;
+        }
+
+        .box1 img {
+            height: 230px;
+            width:100%;
+        }
+
+        .box1 h3 {
+            font-family: sans-serif;
+            margin-left: 10px;
+        }
+
+        .box1 p {
+            margin-left: 10px;
+            font-size: 16px;
+        }
+
+        .box2 {
+            display: flex;
+            grid-area: box2;
+            background-color: white;
+        }
+
+        .box4 {
+            display: flex;
+            grid-area: box4;
+            background-color: white;
+        }
+
+        .box6 {
+            display: flex;
+            grid-area: box6;
+            background-color: white;
+        }
+
+        .box7 {
+            display: flex;
+            grid-area: box7;
+            background-color: white;
+        }
+
+        .box8 {
+            display: flex;
+            grid-area: box8;
+            background-color: white;
+        }
+
+        .box2>div:nth-child(2),
+        .box4>div:nth-child(2),
+        .box6>div:nth-child(2),
+        .box7>div:nth-child(2),
+        .box8>div:nth-child(2) {
+            margin-left: 10px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .box2>div:nth-child(2) p,
+        .box4>div:nth-child(2) p,
+        .box6>div:nth-child(2) p,
+        .box7>div:nth-child(2) p,
+        .box8>div:nth-child(2) p {
+            color: rgb(10, 20, 110);
+            font-family: sans-serif;
+            font-weight: bolder;
+        }
+
+ /* Extra small devices (phones, 600px and down) */
+ @media only screen and (max-width: 600px) {
+              #continer {
+                grid-template: "box1"
+                "box2"
+                " box4"
+                "box6"
+                "box7"
+                "box8";
+            }
+        } 
+
+        /* Small devices (portrait tablets and large phones, 600px and up) */
+        /* @media only screen and (min-width: 600px) {
+          
+        } */
+
+        /* Medium devices (landscape tablets, 768px and up) */
+        @media only screen and (min-width: 600px) and (max-width: 768px) {
+            #continer {
+                grid-template: "box1 box1"
+                "box2  box4"
+                "box6 box7"
+                "box8 box8";
+            }
+        }
+
+        /* Large devices (laptops/desktops, 992px and up) */
+        @media only screen and (min-width: 992px) {
+            #continer {
+                grid-template: "box1 box2"
+                "box1 box4"
+                "box1 box6"
+                "box7 box8";
+            }
+        }
+
+        /* Extra large devices (large laptops and desktops, 1200px and up) */
+        /* @media only screen and (min-width: 1200px) {
+            ...
+        } */
+
+    </style>
+</head>
+
+<body>
+    <div id="continer">
+        <div class="box1"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEjboV0r-2ENxeuLQuzX7lE0hV05XNuTvJ5g&usqp=CAU" alt="Error">
+            <h3>Farmers’ protests | No date set for next round of talks as <br> farmer-government meeting ends in
+                deadlock</h3>
+            <p> SHIVAM SINGH <BR> MASAI SACHOOL <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Est quos
+                dolorum <br> vero illo atque aspernatur
+                ipsam voluptatibus!</p>
+        </div>
+        <div class="box2">
+            <div>
+                <img src="https://d27028dliefpk3.cloudfront.net/static/Illustration/Illustration_110px_ChooseCourse.svg"
+                    alt="Error">
+            </div>
+            <div>
+                <p>NATIONAL</p>Lorem ipsum dolor sit ametLorem ipsum dolor sit amet consectetur, 
+            </div>
+
+        </div>
+        <div class="box4">
+            <div><img
+                    src="https://d27028dliefpk3.cloudfront.net/static/Illustration/Illustration_110px_CreateAccount.svg"
+                    alt="Error"></div>
+            <div>
+                <p>THE HUDDLE </p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, delectus 
+            </div>
+        </div>
+        <div class="box6">
+            <div><img
+                    src="https://d27028dliefpk3.cloudfront.net/static/Illustration/Illustration_110px_CompleteMSAT.svg"
+                    alt="Error"></div>
+            <div>
+                <p>NATIONAL</p> Lorem ipsum dolor sit ametLorem ipsum dolor sit amet consectetur, 
+            </div>
+        </div>
+        <div class="box7">
+            <div><img src="https://d27028dliefpk3.cloudfront.net/static/Illustration/Illustration_110px_Interview.svg"
+                    alt="Error"></div>
+            <div>
+                <p>THE HUDDLE </p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, delectus 
+            </div>
+        </div>
+        <div class="box8">
+            <div><img
+                    src="https://d27028dliefpk3.cloudfront.net/static/Illustration/Illustration_110px_Documentation.svg"
+                    alt="Error"></div>
+            <div>
+                <p>NATIONAL</p> Lorem ipsum dolor sit ametLorem ipsum dolor sit amet consectetur, 
+            </div>
+
+        </div>
+
+    </div>
+</body>
+
+</html>

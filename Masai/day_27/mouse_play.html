@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mouseplay</title>
+    <style>
+        div {
+            margin: auto;
+            margin-top: 150px;
+            border-radius: 10px;
+            width: 500px;
+            height: 280px;
+            background-color: rgb(76, 154, 216);
+        }
+
+        div>div {
+
+            width: 500px;
+            height: 200px;
+        }
+
+        div>button {
+            background-color: rgb(177, 71, 57);
+            width: 180px;
+            height: 65px;
+            font-size: 25px;
+            border-radius: 15px;
+            float: right;
+            margin-right: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="divClr">
+        <div></div>
+        <button id="changeClr">Submit</button>
+    </div>
+    <script>
+        var btnChangeClr = document.getElementById("changeClr");
+        var divChangeClr = document.getElementById("divClr");
+
+        var btnClr = function (color) {
+            btnChangeClr.style.backgroundColor = "rgb(39, 174, 97)";
+        }
+        var btnClr2 = function (color) {
+            btnChangeClr.style.backgroundColor = "rgb(177, 71, 57)";
+        }
+        divChangeClr.addEventListener("mouseenter", btnClr);
+        divChangeClr.addEventListener("mouseleave", btnClr2);
+    </script>
+</body>
+
+</html>
