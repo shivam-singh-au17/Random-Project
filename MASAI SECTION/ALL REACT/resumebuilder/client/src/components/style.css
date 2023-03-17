@@ -1,0 +1,87 @@
+.maxWidth {
+  max-width: 100%;
+}
+
+.ResumePic {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 85vh;
+}
+
+.ResumePic img {
+  width: 70%;
+}
+
+.textWidth {
+  max-width: 70%;
+  margin: auto;
+}
+
+.showError {
+  max-width: 80%;
+  margin: auto;
+  margin-top: 40px;
+}
+
+.errorSection {
+  display: flex;
+  justify-content: space-between;
+}
+
+.leftErrorImg {
+  width: 45%;
+}
+
+.leftErrorImg img {
+  margin-top: 40px;
+  width: 100%;
+}
+
+.rightRror {
+  width: 45%;
+}
+
+.pageNotFound {
+  font-size: 30px;
+}
+
+.notFound {
+  font-size: 159px;
+  line-height: 90px;
+  color: rgba(0, 0, 0, 0.3);
+  fill: rgba(0, 0, 0, 0.3);
+  font-family: "Times New Roman", Times, serif;
+}
+
+.notFoundTxt {
+  font-size: 109px;
+  line-height: 110px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.errorpTag {
+  font-size: 20px;
+}
+
+.PersonalDetails {
+  max-width: 65%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  min-height: 89vh;
+}
+
+.PersonalDetails div {
+  background-color: rgb(255, 0, 191);
+  text-align: center;
+  padding: 20px 0px;
+  color: white;
+  border-radius: 10px;
+}
+
+.PersonalDetailsBox {
+  max-width: 80%;
+  margin: auto;
+}

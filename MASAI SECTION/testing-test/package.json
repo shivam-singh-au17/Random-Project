@@ -1,0 +1,14 @@
+{
+  "name": "testing-test",
+  "version": "1.0.0",
+  "description": "Hands On Testing",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --watch"
+  },
+  "author": "Shivam Singh",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^27.5.1"
+  }
+}
