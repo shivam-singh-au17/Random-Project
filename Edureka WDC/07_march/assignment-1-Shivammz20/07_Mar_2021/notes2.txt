@@ -1,0 +1,24 @@
+BATCH 13 - Agenda 28 Feb 2021:
+
+(1) Third user story - Adding search option - Done
+(2) Fourth user story - Quick Search options - Done
+(3) Few more HTML tags: Table tag, section - Done
+(4) CSS
+— How to include CSS - Done
+— Precedence order - Done
+— How to write CSS, Selectors - Done
+— Dimensions in CSS - Done
+— Various Properties in CSS - WIP
+— User stories
+(5) Assignment 1
+(6) Git installation
+(7) Setup git bash
+(8) Assignment submission
+(9) Polls after topics
+    1: understood
+    2: Not understood
+    3: Going fast
+    4: Going slow
+(10) Feedback - excellent
+
+Break till 7:25 pm !!

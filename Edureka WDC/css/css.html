@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div style=" margin-top: 50px;margin-left: 50px;">
+        <table border="4">
+            <thead>
+
+                <tr style="background-image: linear-gradient(to right, #eea2a2 0%, #bbc1bf 19%, #57c6e1 42%, #b49fda 79%, #7ac5d8 100%);font-size: 25px;font-weight: bold;">
+
+                    <td style="padding: 7px;background-image: linear-gradient(to right, #eea2a2 0%, #bbc1bf 19%, #57c6e1 42%, #b49fda 79%, #7ac5d8 100%);" colspan="8">CSS has two types of lengths. Relative length and absolute
+                        length. <br> Different units
+                        are used
+                        for them.
+                    </td>
+
+                </tr>
+
+            </thead>
+            <tbody>
+                <tr>
+                    <td
+                        style="font-weight: bold;font-size: 19px;text-align: center;padding: 3px;background-image: linear-gradient(to right, #eea2a2 0%, #bbc1bf 19%, #57c6e1 42%, #b49fda 79%, #7ac5d8 100%);">
+                        Em</td>
+                    <td style="font-weight: bold;font-size: 17px;padding: 3px;background-image: linear-gradient(to right, #eea2a2 0%, #bbc1bf 19%, #57c6e1 42%, #b49fda 79%, #7ac5d8 100%);">Relative to
+                        the font-size of the element (2em means two times the size of
+                        the current font)
+                    </td>
+
+                </tr>
+                <tr>
+                    <td
+                        style="font-weight: bold;font-size: 19px;text-align: center;padding: 3px;background-image: linear-gradient(to right, #eea2a2 0%, #bbc1bf 19%, #57c6e1 42%, #b49fda 79%, #7ac5d8 100%); ">
+                        Ex</td>
+                    <td style="font-weight: bold;font-size: 17px;padding: 3px;background-image: linear-gradient(to right, #eea2a2 0%, #bbc1bf 19%, #57c6e1 42%, #b49fda 79%, #7ac5d8 100%);">Relative to
+                        the x-height of the current font (rarely used)
+                    </td>
+                </tr>
+                <tr>
+                    <td
+                        style="font-weight: bold;font-size: 19px;text-align: center;padding: 3px;background-image: linear-gradient(to right, #eea2a2 0%, #bbc1bf 19%, #57c6e1 42%, #b49fda 79%, #7ac5d8 100%); ">
+                        Ch</td>
+                    <td style="font-weight: bold;font-size: 17px;padding: 3px;background-image: linear-gradient(to right, #eea2a2 0%, #bbc1bf 19%, #57c6e1 42%, #b49fda 79%, #7ac5d8 100%); ">Relative to
+                        the width of the “0” (zero)
+                    </td>
+                </tr>
+                <tr>
+                    <td
+                        style="font-weight: bold;font-size: 19px;text-align: center;padding: 3px;background-image: linear-gradient(to right, #eea2a2 0%, #bbc1bf 19%, #57c6e1 42%, #b49fda 79%, #7ac5d8 100%); ">
+                        Rem</td>
+                    <td style="font-weight: bold;font-size: 17px;padding: 3px;background-image: linear-gradient(to right, #eea2a2 0%, #bbc1bf 19%, #57c6e1 42%, #b49fda 79%, #7ac5d8 100%); ">Relative to
+                        font-size of the root element</td>
+                </tr>
+                <tr>
+                    <td
+                        style="font-weight: bold;font-size: 19px;text-align: center;padding: 3px;background-image: linear-gradient(to right, #eea2a2 0%, #bbc1bf 19%, #57c6e1 42%, #b49fda 79%, #7ac5d8 100%); ">
+                        Vw</td>
+                    <td style="font-weight: bold;font-size: 17px;padding: 3px;background-image: linear-gradient(to right, #eea2a2 0%, #bbc1bf 19%, #57c6e1 42%, #b49fda 79%, #7ac5d8 100%); ">Relative to
+                        1% of the width of the viewport*</td>
+                </tr>
+                <tr>
+                    <td
+                        style="font-weight: bold;font-size: 19px;text-align: center;padding: 3px;background-image: linear-gradient(to right, #eea2a2 0%, #bbc1bf 19%, #57c6e1 42%, #b49fda 79%, #7ac5d8 100%); ">
+                        Vh</td>
+                    <td style="font-weight: bold;font-size: 17px;padding: 3px;background-image: linear-gradient(to right, #eea2a2 0%, #bbc1bf 19%, #57c6e1 42%, #b49fda 79%, #7ac5d8 100%); ">Relative to
+                        1% of the height of the viewport*</td>
+                </tr>
+                <tr>
+                    <td
+                        style="font-weight: bold;font-size: 19px;text-align: center;padding: 3px;background-image: linear-gradient(to right, #eea2a2 0%, #bbc1bf 19%, #57c6e1 42%, #b49fda 79%, #7ac5d8 100%); ">
+                        Vmin</td>
+                    <td style="font-weight: bold;font-size: 17px;padding: 3px;background-image: linear-gradient(to right, #eea2a2 0%, #bbc1bf 19%, #57c6e1 42%, #b49fda 79%, #7ac5d8 100%); ">Relative to
+                        1% of viewport’s* smaller dimension
+                    </td>
+                </tr>
+                <tr>
+                    <td
+                        style="font-weight: bold;font-size: 19px;text-align: center;padding: 3px;background-image: linear-gradient(to right, #eea2a2 0%, #bbc1bf 19%, #57c6e1 42%, #b49fda 79%, #7ac5d8 100%); ">
+                        Vmax</td>
+                    <td style="font-weight: bold;font-size: 17px;padding: 3px;background-image: linear-gradient(to right, #eea2a2 0%, #bbc1bf 19%, #57c6e1 42%, #b49fda 79%, #7ac5d8 100%); ">Relative to
+                        1% of viewport’s* larger dimension</td>
+                </tr>
+                <tr>
+                    <td
+                        style="font-weight: bold;font-size: 19px;text-align: center;padding: 3px;background-image: linear-gradient(to right, #eea2a2 0%, #bbc1bf 19%, #57c6e1 42%, #b49fda 79%, #7ac5d8 100%); ">
+                        %</td>
+                    <td style="font-weight: bold;font-size: 17px;padding: 3px;background-image: linear-gradient(to right, #eea2a2 0%, #bbc1bf 19%, #57c6e1 42%, #b49fda 79%, #7ac5d8 100%); ">Relative to
+                        the parent element</td>
+                </tr>
+                <tr>
+                    <td
+                        style="font-weight: bold;font-size: 19px;text-align: center;padding: 3px;background-image: linear-gradient(to right, #eea2a2 0%, #bbc1bf 19%, #57c6e1 42%, #b49fda 79%, #7ac5d8 100%); ">
+                        CM</td>
+                    <td style="font-weight: bold;font-size: 17px;padding: 3px;background-image: linear-gradient(to right, #eea2a2 0%, #bbc1bf 19%, #57c6e1 42%, #b49fda 79%, #7ac5d8 100%); ">Centimetres
+                    </td>
+                </tr>
+                <tr>
+                    <td
+                        style="font-weight: bold;font-size: 19px;text-align: center;padding: 3px;background-image: linear-gradient(to right, #eea2a2 0%, #bbc1bf 19%, #57c6e1 42%, #b49fda 79%, #7ac5d8 100%); ">
+                        MM</td>
+                    <td style="font-weight: bold;font-size: 17px;padding: 3px;background-image: linear-gradient(to right, #eea2a2 0%, #bbc1bf 19%, #57c6e1 42%, #b49fda 79%, #7ac5d8 100%); ">Millimetres
+                    </td>
+                </tr>
+                <tr>
+                    <td
+                        style="font-weight: bold;font-size: 19px;text-align: center;padding: 3px;background-image: linear-gradient(to right, #eea2a2 0%, #bbc1bf 19%, #57c6e1 42%, #b49fda 79%, #7ac5d8 100%); ">
+                        IN</td>
+                    <td style="font-weight: bold;font-size: 17px;padding: 3px;background-image: linear-gradient(to right, #eea2a2 0%, #bbc1bf 19%, #57c6e1 42%, #b49fda 79%, #7ac5d8 100%); ">inches (1in =
+                        96px = 2.54cm)
+                    </td>
+                </tr>
+                <tr>
+                    <td
+                        style="font-weight: bold;font-size: 19px;text-align: center;padding: 3px;background-image: linear-gradient(to right, #eea2a2 0%, #bbc1bf 19%, #57c6e1 42%, #b49fda 79%, #7ac5d8 100%); ">
+                        PX</td>
+                    <td style="font-weight: bold;font-size: 17px;padding: 3px;background-image: linear-gradient(to right, #eea2a2 0%, #bbc1bf 19%, #57c6e1 42%, #b49fda 79%, #7ac5d8 100%); ">pixels (1px =
+                        1/96th of 1in)
+                    </td>
+                </tr>
+                <tr>
+                    <td
+                        style="font-weight: bold;font-size: 19px;text-align: center;padding: 3px;background-image: linear-gradient(to right, #eea2a2 0%, #bbc1bf 19%, #57c6e1 42%, #b49fda 79%, #7ac5d8 100%); ">
+                        PT</td>
+                    <td style="font-weight: bold;font-size: 17px;padding: 3px;background-image: linear-gradient(to right, #eea2a2 0%, #bbc1bf 19%, #57c6e1 42%, #b49fda 79%, #7ac5d8 100%); ">points (1pt =
+                        1/72 of 1in)
+                    </td>
+                </tr>
+                <tr>
+                    <td
+                        style="font-weight: bold;font-size: 19px;text-align: center;padding: 3px;background-image: linear-gradient(to right, #eea2a2 0%, #bbc1bf 19%, #57c6e1 42%, #b49fda 79%, #7ac5d8 100%); ">
+                        PC</td>
+                    <td style="font-weight: bold;font-size: 17px;padding: 3px;background-image: linear-gradient(to right, #eea2a2 0%, #bbc1bf 19%, #57c6e1 42%, #b49fda 79%, #7ac5d8 100%); ">picas (1pc =
+                        12 pt)
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+    </div>
+</body>
+
+</html>

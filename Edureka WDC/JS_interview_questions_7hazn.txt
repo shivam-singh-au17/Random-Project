@@ -1,0 +1,259 @@
+
+(1) What is the significance of using JS ? 
+
+    JavaScript, an object scripting language which is used in web pages along with markup language HTML. An HTML page is a static one and without JavaScript it would be static still. JavaScript can make the website more interactive and user- friendliness of JavaScript helps easy navigation of the website and helps designers to guide the visitors with additional information or guide them through walkthroughs. Visual effects can also be achieved with JavaScript. JavaScript can be used effectively to create special effects like rollover for images.
+
+
+(2) How can we check if given value is number or not in JS ?
+
+    a. check using 'typeof'  
+    b. isNaN() - is not a number
+
+
+(3) What is the difference between null and undefined ?
+    
+    null - is an object, if assigned to a variable it means 'no value' 
+    var abc = null;
+    alert(abc); // null
+
+    undefined - is a type, which means the value is 'not defined'
+    var def;
+    alert(def) // undefined
+
+
+(4) Difference between = vs == vs === ?
+
+    =   used for assigning a value to a variable
+    ==  compares two values BUT not the type (2 == '2') // true
+    === compares two values AND the type as well (2 === '2') // false
+
+
+(5) Difference between setTimeout and setInterval functions in JS ?
+
+    setTimeout: we can delay the execution of code by the time in milliseconds
+        setTimeout(() => {
+            // lines of code
+        }, 5000)
+
+    setInterval: we can repeat the execution of code by every interval value provided
+        setInterval(() => {
+            // lines of code
+        }, 5000)
+        cleartimeout : is used to stop the interval
+
+(6) Explain 'this' keyword in JS ?
+
+    'this' keyword has different values depending on where it is used.
+
+    In a method, this refers to the owner of the object.
+    Alone, it refers to the global object.
+    In a function (without "use strict"), it refers to the global object.
+    In a function (with "use strict"), it refers to the private scope, if private scope is not defined. Then it will give undefined.
+    In an event, 'this' refers to the element that recieved the event.
+    Methods like call() and apply(), inside the method it refers to the scope which we attach/pass using call(), apply() and bind()
+    Inside a class, 'this' refers to the class
+
+
+(7) Evaluate 3 + 2 + "7" ?
+
+    "57"   
+
+
+(8) Evaluate 3 + "2" + 7 ?
+
+    "327"
+
+
+(9) What is the significance of using "use strict" in JS ?
+
+    It eliminates the silent errors by forcing JS to throw the errors. Prevents, the unsafe actions, runs the JS in secure mode.
+
+
+(10) What are the ways of integrating JS in HTML ?
+
+    a. To write a <script> tag in HTML itself
+    b. To importing an external JS file in HTML
+
+
+(11) let vs const vs var ?
+
+    a. let - mutable, no-hoisting, block scope
+    b. const - un-mutable, no-hoisting, block scope
+    c. var - mutable, hoisting, functional scope
+
+
+(12) splice()  VS  slice() ?
+
+    a. slice - not affect the original input; start index and end index and; not include the end index; return the output b/w start index and end index
+    b. splice - change the original input; start index, count of items and (optional) 3rd param to be added; return the deleted items
+
+
+(13) What is Ternary Operator ?
+
+    <condition> ? <statement> : <statement>
+
+
+(14) Explain Arrow functions in JS ?
+
+    let sum = function(a, b) {
+        return a + b;
+    }
+
+    let sum = (a, b) => {
+        return a + b;
+    }
+
+    function sum(a, b) {
+        return a + b;
+    }
+
+    sum = (a, b) => {
+        return a + b;
+    }
+
+
+(15) explain IIFE ?
+
+    IIFE: Immediately Invoked function expressions, it is a design pattern in JS
+
+    (/* Expressions */)();
+
+    (function(){
+        // lines of code
+    })();
+
+
+(16) call vs apply vs bind
+
+    "use strict"
+
+    this.num = 10;
+
+    var obj = {
+        num: 20
+    }
+
+    let sum = function(a, b) {
+        return this.num + a + b;
+    }
+
+    console.log(sum.call(this, 30, 40)) // 80
+    console.log(sum.call(obj, 30, 40)) // 90
+    console.log(sum.apply(this, [30, 40])) // 80
+    console.log(sum.apply(obj, [30, 40])) // 90
+
+
+    let retFunc = sum.bind(this);
+    console.log(retFunc(40, 50)) // 100
+
+
+(17) Differentiate between Local Storage and Session Storage ?
+
+    a. localStorage: storage in browser, remains forever untill we remove it.
+    b. sessionStorage: storage in browser, remains till the window is open, can survive a browser refresh.
+
+
+(18) What is hoisting in JS ?
+
+    the varaible declaration and function definition is taken to the top of the scope
+
+
+(19) Ways to handle asynchronous data in JS ?
+
+    a. Callbacks
+    b. promises
+    c. async and await
+
+
+(20) what are callbacks in JS ?
+
+    callback is a function passed as an argument to another function. This technique allows the other function to call the passed function.
+
+
+(21) What are promises in JS ?
+
+    A promise is a proxy for a value which is not known when the promise to return that value is created.
+    e.g. is an API call to fecth the data from the server
+
+    let prom = new Promise((resolve, reject) => {
+
+        // can take some time
+        setTimeout(() => {
+            resolve("Promise is a success")
+        }, 5000)
+
+        if (false) {
+            reject("Error")
+        }
+    
+    });
+
+    prom.then((response) => {
+        console.log(response);
+    }).catch((err) => {
+        console.log(err)
+    });
+
+
+(22) Explain async / await in JS ?
+
+    It is an extension of the promises. It makes sure that a promise is returned and if not returned then JS automatically wraps it in a promise which can be resolved.
+
+
+(23) What are closures in JS ?
+
+    it is a feature of JS where inner function has access to outer function's variables
+
+    let globalVariable = 5;
+    let myVar = 15;
+
+    function outer() {
+        let outerVariable = 10;
+        let myVar = 25;
+
+        function inner() {
+            let innerVariable = 20;
+            let myVar = 35;
+
+            /*
+            (1) has access to its own scope
+            (2) has access to outer function's scope
+            (3) has access to global scope 
+            */
+
+            return myVar;
+        }
+    }
+
+
+(24) spread operator vs rest operator ?
+
+    a. spread:  ...   used to concatenate arrays and objects
+    b. rest:    ...   used to combine all the remaining values into an array
+
+
+(25)  Write a JS program to Find duplicate numbers in the following array of integers ?
+
+    const arr = [ 1, 2, 33, 2, 4, 4, 5, 6, 7, 7, 7, 8, 10 ];
+
+
+    // write a function to do it
+    function findDuplicates(array) {
+
+        // use the objects
+        let obj = {};
+
+        // loop through the array
+        let deuplicates = array.map((item) => {
+            if (obj[item]) {
+                return item;
+            } else {
+                obj[item] = item;
+            }
+        });
+
+        return duplicates;
+    }
+
+    // call the function
+    console.log(findDuplicates(arr));

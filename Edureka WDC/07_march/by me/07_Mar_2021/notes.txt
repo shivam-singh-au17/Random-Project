@@ -1,0 +1,12 @@
+HTML - parsed by the browser
+
+CSS - 
+    cascading style sheet
+    is used to add styles to a web page
+
+    How to add CSS on HTML:
+    (1) inline CSS
+    (2) internal CSS
+    (3) external CSS
+
+pseudo classes

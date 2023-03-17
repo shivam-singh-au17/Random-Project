@@ -1,0 +1,28 @@
+
+
+/// Grid System in boostrap
+
+(1) every row in a grid system is equally divided into 12 sections known as columns
+(2) e.g col-6 and col-6 so that both the HTML elements equally occupy the width of the row
+    e.g. 12 / 4 = 3  
+        col-3, col-3, col-3, col-3
+
+(3) 
+    <div class="container">
+        <div class="row">
+            <div class="col-6">
+                Div 1 : 50%
+            </div>
+            <div class="col-6">
+                Div 2 : 50%
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-8">
+                Div 1 : 66.6% 
+            </div>
+            <div class="col-4">
+                Div 2 : 33.3%
+            </div>
+        </div>
+    </div>
